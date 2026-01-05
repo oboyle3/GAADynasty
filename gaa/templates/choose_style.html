@@ -1,0 +1,14 @@
+<h2>Choose Offensive Style</h2>
+
+<form method="post">
+  {% csrf_token %}
+  {{ form.as_p }}
+
+  <p><strong>Balanced</strong> – Versatile, multi-attack approach.</p>
+  <p><strong>Motion</strong> – Continuous movement and passing.</p>
+  <p><strong>Drive</strong> – Direct, powerful runs.</p>
+  <p><strong>Set</strong> – Structured, tactical play.</p>
+  <p><strong>Early</strong> – Fast counter-attacking style.</p>
+
+  <button type="submit">Confirm Style</button>
+</form>

@@ -1,0 +1,13 @@
+<h2>Choose Offensive Style</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {% for value, label in styles %}
+        <label>
+            <input type="radio" name="style" value="{{ value }}" required>
+            <strong>{{ label }}</strong>
+        </label><br>
+    {% endfor %}
+
+    <button type="submit">Start Season</button>
+</form>
